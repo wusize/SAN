@@ -100,6 +100,7 @@ class SAN(nn.Module):
         model, _, preprocess = open_clip.create_model_and_transforms(
             cfg.MODEL.SAN.CLIP_MODEL_NAME,
             pretrained=cfg.MODEL.SAN.CLIP_PRETRAINED_NAME,
+            cache_dir=cfg.MODEL.SAN.CLIP_CACHE_DIR
         )
         ov_classifier = LearnableBgOvClassifier(
             model, templates=get_predefined_templates(cfg.MODEL.SAN.CLIP_TEMPLATE_SET)

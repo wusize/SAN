@@ -40,6 +40,7 @@ def add_san_config(cfg):
     cfg.MODEL.SAN.OVERSAMPLE_RATIO = 3.0
     cfg.MODEL.SAN.IMPORTANCE_SAMPLE_RATIO = 0.75
     cfg.MODEL.SAN.CLIP_MODEL_NAME = "ViT-B/16"
+    cfg.MODEL.SAN.CLIP_CACHE_DIR = "checkpoints"
     cfg.MODEL.SAN.CLIP_PRETRAINED_NAME = "openai"
     cfg.MODEL.SAN.CLIP_TEMPLATE_SET = "vild"
     cfg.MODEL.SAN.FEATURE_LAST_LAYER_IDX = 9
